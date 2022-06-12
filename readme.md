@@ -115,7 +115,7 @@ To define a widget, you have to use the `Def` keyword in the following format:
 
 example:
 
-`Def MyButton : Label`
+`Def MyLabel : Label`
 
 Note that the widget name doesn't have to be in PascalCase.
 
