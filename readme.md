@@ -107,7 +107,7 @@ The number on the button will increment by one everytime you click it.
 
 # Language Reference
 As you can see in the previous examples that every widgets are defined with the
-`Use` keyword and then ended with the `End` keyword.
+`Def` keyword and then ended with the `End` keyword.
 
 To define a widget, you have to use the `Def` keyword in the following format:
 
