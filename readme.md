@@ -29,6 +29,7 @@ e.load_file("main.psqt")
 e.run(Bridge)
 ```
 result:
+
 ![A blank window](https://i.ibb.co/WWcWLf1/blank-window.png)
 
 ### Showing a label
@@ -53,6 +54,7 @@ Def Window : Widget
 End
 ```
 result:
+
 ![A window with a label saying "Hello, Mother!"](https://i.ibb.co/dQfrwPZ/a-label.png)
 
 ### Connecting a button to a python function
@@ -74,6 +76,27 @@ Def Window : Widget
         End
     End
 End
+```
+main.py
+
+```python
+from pysubqt import Engine
+
+
+class Bridge:
+    def __init__(self):
+        self.ui = None
+        self.x = 0
+
+    def onClicked(self):
+        self.x += 1
+        self.ui.Btn.setText(str(self.x))
+
+
+e = Engine()
+e.load_file("main.psqt")
+e.run(Bridge)
+
 ```
 
 result:
